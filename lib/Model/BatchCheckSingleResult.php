@@ -184,7 +184,7 @@ class BatchCheckSingleResult implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\CheckError $error error 
      *   Associated array of property values initializing the model
      */
-    public function __construct(bool $allowed, \RuncloudIO\SDK\OPENFGA\Model\CheckError $error)
+    public function __construct(bool $allowed = null, \RuncloudIO\SDK\OPENFGA\Model\CheckError $error = null)
     {
         if(!is_null($allowed)) {
             $this->container['allowed'] = $allowed;

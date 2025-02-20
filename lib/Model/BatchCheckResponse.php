@@ -176,7 +176,7 @@ class BatchCheckResponse implements ModelInterface
      * @param map[string,\RuncloudIO\SDK\OPENFGA\Model\BatchCheckSingleResult] $result result 
      *   Associated array of property values initializing the model
      */
-    public function __construct(map[string,\RuncloudIO\SDK\OPENFGA\Model\BatchCheckSingleResult] $result)
+    public function __construct(map[string,\RuncloudIO\SDK\OPENFGA\Model\BatchCheckSingleResult] $result = null)
     {
         if(!is_null($result)) {
             $this->container['result'] = $result;

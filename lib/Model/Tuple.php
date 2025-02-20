@@ -186,7 +186,7 @@ class Tuple implements ModelInterface
      * @param \DateTime $timestamp timestamp 
      *   Associated array of property values initializing the model
      */
-    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\TupleKey $key, \DateTime $timestamp)
+    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\TupleKey $key = null, \DateTime $timestamp = null)
     {
         if(!is_null($key)) {
             $this->container['key'] = $key;

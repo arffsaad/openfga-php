@@ -177,7 +177,7 @@ class AssertionsAuthorizationModelIdBody implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\Assertion[] $assertions assertions 
      *   Associated array of property values initializing the model
      */
-    public function __construct(array $assertions)
+    public function __construct(array $assertions = null)
     {
         if(!is_null($assertions)) {
             $this->container['assertions'] = $assertions;

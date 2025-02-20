@@ -177,7 +177,7 @@ class Nodes implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\Node[] $nodes nodes 
      *   Associated array of property values initializing the model
      */
-    public function __construct(array $nodes)
+    public function __construct(array $nodes = null)
     {
         if(!is_null($nodes)) {
             $this->container['nodes'] = $nodes;

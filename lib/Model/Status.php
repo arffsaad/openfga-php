@@ -192,7 +192,7 @@ class Status implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\Any[] $details details 
      *   Associated array of property values initializing the model
      */
-    public function __construct(int $code, string $message, array $details)
+    public function __construct(int $code = null, string $message = null, array $details = null)
     {
         if(!is_null($code)) {
             $this->container['code'] = $code;

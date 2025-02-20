@@ -177,7 +177,7 @@ class CreateStoreRequest implements ModelInterface
      * @param string $name name 
      *   Associated array of property values initializing the model
      */
-    public function __construct(string $name)
+    public function __construct(string $name = null)
     {
         if(!is_null($name)) {
             $this->container['name'] = $name;

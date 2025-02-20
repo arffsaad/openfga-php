@@ -195,7 +195,7 @@ class TupleChange implements ModelInterface
      * @param \DateTime $timestamp timestamp 
      *   Associated array of property values initializing the model
      */
-    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\TupleKey $tuple_key, \RuncloudIO\SDK\OPENFGA\Model\TupleOperation $operation, \DateTime $timestamp)
+    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\TupleKey $tuple_key = null, \RuncloudIO\SDK\OPENFGA\Model\TupleOperation $operation = null, \DateTime $timestamp = null)
     {
         if(!is_null($tuple_key)) {
             $this->container['tuple_key'] = $tuple_key;

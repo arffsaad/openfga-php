@@ -203,7 +203,7 @@ class TupleKey implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\RelationshipCondition $condition condition 
      *   Associated array of property values initializing the model
      */
-    public function __construct(string $user, string $relation, string $object, \RuncloudIO\SDK\OPENFGA\Model\RelationshipCondition $condition)
+    public function __construct(string $user = null, string $relation = null, string $object = null, \RuncloudIO\SDK\OPENFGA\Model\RelationshipCondition $condition = null)
     {
         if(!is_null($user)) {
             $this->container['user'] = $user;

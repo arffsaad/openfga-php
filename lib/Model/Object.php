@@ -187,7 +187,7 @@ class Object implements ModelInterface
      * @param string $id id 
      *   Associated array of property values initializing the model
      */
-    public function __construct(string $type, string $id)
+    public function __construct(string $type = null, string $id = null)
     {
         if(!is_null($type)) {
             $this->container['type'] = $type;

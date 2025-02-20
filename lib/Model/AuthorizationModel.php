@@ -203,7 +203,7 @@ class AuthorizationModel implements ModelInterface
      * @param map[string,\RuncloudIO\SDK\OPENFGA\Model\Condition] $conditions conditions 
      *   Associated array of property values initializing the model
      */
-    public function __construct(string $id, string $schema_version, array $type_definitions, map[string,\RuncloudIO\SDK\OPENFGA\Model\Condition] $conditions)
+    public function __construct(string $id = null, string $schema_version = null, array $type_definitions = null, map[string,\RuncloudIO\SDK\OPENFGA\Model\Condition] $conditions = null)
     {
         if(!is_null($id)) {
             $this->container['id'] = $id;

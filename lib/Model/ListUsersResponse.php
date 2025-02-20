@@ -177,7 +177,7 @@ class ListUsersResponse implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\User[] $users users 
      *   Associated array of property values initializing the model
      */
-    public function __construct(array $users)
+    public function __construct(array $users = null)
     {
         if(!is_null($users)) {
             $this->container['users'] = $users;

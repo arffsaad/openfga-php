@@ -186,7 +186,7 @@ class V1TupleToUserset implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\ObjectRelation $computed_userset computed_userset 
      *   Associated array of property values initializing the model
      */
-    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\ObjectRelation $tupleset, \RuncloudIO\SDK\OPENFGA\Model\ObjectRelation $computed_userset)
+    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\ObjectRelation $tupleset = null, \RuncloudIO\SDK\OPENFGA\Model\ObjectRelation $computed_userset = null)
     {
         if(!is_null($tupleset)) {
             $this->container['tupleset'] = $tupleset;

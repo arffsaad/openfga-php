@@ -194,7 +194,7 @@ class StoreIdAuthorizationmodelsBody implements ModelInterface
      * @param map[string,\RuncloudIO\SDK\OPENFGA\Model\Condition] $conditions conditions 
      *   Associated array of property values initializing the model
      */
-    public function __construct(array $type_definitions, string $schema_version, map[string,\RuncloudIO\SDK\OPENFGA\Model\Condition] $conditions)
+    public function __construct(array $type_definitions = null, string $schema_version = null, map[string,\RuncloudIO\SDK\OPENFGA\Model\Condition] $conditions = null)
     {
         if(!is_null($type_definitions)) {
             $this->container['type_definitions'] = $type_definitions;

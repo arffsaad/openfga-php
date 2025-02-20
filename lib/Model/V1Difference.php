@@ -186,7 +186,7 @@ class V1Difference implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\Userset $subtract subtract 
      *   Associated array of property values initializing the model
      */
-    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\Userset $base, \RuncloudIO\SDK\OPENFGA\Model\Userset $subtract)
+    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\Userset $base = null, \RuncloudIO\SDK\OPENFGA\Model\Userset $subtract = null)
     {
         if(!is_null($base)) {
             $this->container['base'] = $base;

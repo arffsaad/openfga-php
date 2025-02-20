@@ -185,7 +185,7 @@ class UserTypeFilter implements ModelInterface
      * @param string $relation relation 
      *   Associated array of property values initializing the model
      */
-    public function __construct(string $type, string $relation)
+    public function __construct(string $type = null, string $relation = null)
     {
         if(!is_null($type)) {
             $this->container['type'] = $type;

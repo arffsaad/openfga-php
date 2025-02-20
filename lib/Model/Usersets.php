@@ -177,7 +177,7 @@ class Usersets implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\Userset[] $child child 
      *   Associated array of property values initializing the model
      */
-    public function __construct(array $child)
+    public function __construct(array $child = null)
     {
         if(!is_null($child)) {
             $this->container['child'] = $child;

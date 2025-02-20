@@ -185,7 +185,7 @@ class RelationshipCondition implements ModelInterface
      * @param object $context context 
      *   Associated array of property values initializing the model
      */
-    public function __construct(string $name, object $context)
+    public function __construct(string $name = null, object $context = null)
     {
         if(!is_null($name)) {
             $this->container['name'] = $name;

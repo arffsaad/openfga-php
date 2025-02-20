@@ -176,7 +176,7 @@ class ReadAuthorizationModelResponse implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\AuthorizationModel $authorization_model authorization_model 
      *   Associated array of property values initializing the model
      */
-    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\AuthorizationModel $authorization_model)
+    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\AuthorizationModel $authorization_model = null)
     {
         if(!is_null($authorization_model)) {
             $this->container['authorization_model'] = $authorization_model;

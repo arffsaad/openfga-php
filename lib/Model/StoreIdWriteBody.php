@@ -192,7 +192,7 @@ class StoreIdWriteBody implements ModelInterface
      * @param string $authorization_model_id authorization_model_id 
      *   Associated array of property values initializing the model
      */
-    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\WriteRequestWrites $writes, \RuncloudIO\SDK\OPENFGA\Model\WriteRequestDeletes $deletes, string $authorization_model_id)
+    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\WriteRequestWrites $writes = null, \RuncloudIO\SDK\OPENFGA\Model\WriteRequestDeletes $deletes = null, string $authorization_model_id = null)
     {
         if(!is_null($writes)) {
             $this->container['writes'] = $writes;

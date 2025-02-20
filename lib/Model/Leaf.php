@@ -193,7 +193,7 @@ class Leaf implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\UsersetTreeTupleToUserset $tuple_to_userset tuple_to_userset 
      *   Associated array of property values initializing the model
      */
-    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\Users $users, \RuncloudIO\SDK\OPENFGA\Model\Computed $computed, \RuncloudIO\SDK\OPENFGA\Model\UsersetTreeTupleToUserset $tuple_to_userset)
+    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\Users $users = null, \RuncloudIO\SDK\OPENFGA\Model\Computed $computed = null, \RuncloudIO\SDK\OPENFGA\Model\UsersetTreeTupleToUserset $tuple_to_userset = null)
     {
         if(!is_null($users)) {
             $this->container['users'] = $users;

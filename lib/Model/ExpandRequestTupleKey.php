@@ -186,7 +186,7 @@ class ExpandRequestTupleKey implements ModelInterface
      * @param string $object object 
      *   Associated array of property values initializing the model
      */
-    public function __construct(string $relation, string $object)
+    public function __construct(string $relation = null, string $object = null)
     {
         if(!is_null($relation)) {
             $this->container['relation'] = $relation;

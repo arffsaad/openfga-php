@@ -176,7 +176,7 @@ class SourceInfo implements ModelInterface
      * @param string $file file 
      *   Associated array of property values initializing the model
      */
-    public function __construct(string $file)
+    public function __construct(string $file = null)
     {
         if(!is_null($file)) {
             $this->container['file'] = $file;

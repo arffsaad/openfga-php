@@ -185,7 +185,7 @@ class ReadAuthorizationModelsResponse implements ModelInterface
      * @param string $continuation_token continuation_token 
      *   Associated array of property values initializing the model
      */
-    public function __construct(array $authorization_models, string $continuation_token)
+    public function __construct(array $authorization_models = null, string $continuation_token = null)
     {
         if(!is_null($authorization_models)) {
             $this->container['authorization_models'] = $authorization_models;

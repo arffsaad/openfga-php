@@ -216,7 +216,7 @@ class Userset implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\V1Difference $difference difference 
      *   Associated array of property values initializing the model
      */
-    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\DirectUserset $this, \RuncloudIO\SDK\OPENFGA\Model\ObjectRelation $computed_userset, \RuncloudIO\SDK\OPENFGA\Model\V1TupleToUserset $tuple_to_userset, \RuncloudIO\SDK\OPENFGA\Model\Usersets $union, \RuncloudIO\SDK\OPENFGA\Model\Usersets $intersection, \RuncloudIO\SDK\OPENFGA\Model\V1Difference $difference)
+    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\DirectUserset $this = null, \RuncloudIO\SDK\OPENFGA\Model\ObjectRelation $computed_userset = null, \RuncloudIO\SDK\OPENFGA\Model\V1TupleToUserset $tuple_to_userset = null, \RuncloudIO\SDK\OPENFGA\Model\Usersets $union = null, \RuncloudIO\SDK\OPENFGA\Model\Usersets $intersection = null, \RuncloudIO\SDK\OPENFGA\Model\V1Difference $difference = null)
     {
         if(!is_null($this)) {
             $this->container['this'] = $this;

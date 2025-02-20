@@ -184,7 +184,7 @@ class ObjectRelation implements ModelInterface
      * @param string $relation relation 
      *   Associated array of property values initializing the model
      */
-    public function __construct(string $object, string $relation)
+    public function __construct(string $object = null, string $relation = null)
     {
         if(!is_null($object)) {
             $this->container['object'] = $object;

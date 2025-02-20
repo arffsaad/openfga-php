@@ -192,7 +192,7 @@ class RelationMetadata implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\SourceInfo $source_info source_info 
      *   Associated array of property values initializing the model
      */
-    public function __construct(array $directly_related_user_types, string $module, \RuncloudIO\SDK\OPENFGA\Model\SourceInfo $source_info)
+    public function __construct(array $directly_related_user_types = null, string $module = null, \RuncloudIO\SDK\OPENFGA\Model\SourceInfo $source_info = null)
     {
         if(!is_null($directly_related_user_types)) {
             $this->container['directly_related_user_types'] = $directly_related_user_types;

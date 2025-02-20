@@ -185,7 +185,7 @@ class ConditionParamTypeRef implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\ConditionParamTypeRef[] $generic_types generic_types 
      *   Associated array of property values initializing the model
      */
-    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\TypeName $type_name, array $generic_types)
+    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\TypeName $type_name = null, array $generic_types = null)
     {
         if(!is_null($type_name)) {
             $this->container['type_name'] = $type_name;

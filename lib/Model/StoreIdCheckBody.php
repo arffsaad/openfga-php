@@ -217,7 +217,7 @@ class StoreIdCheckBody implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\ConsistencyPreference $consistency consistency 
      *   Associated array of property values initializing the model
      */
-    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\CheckRequestTupleKey $tuple_key, \RuncloudIO\SDK\OPENFGA\Model\ContextualTupleKeys $contextual_tuples, string $authorization_model_id, bool $trace, object $context, \RuncloudIO\SDK\OPENFGA\Model\ConsistencyPreference $consistency)
+    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\CheckRequestTupleKey $tuple_key = null, \RuncloudIO\SDK\OPENFGA\Model\ContextualTupleKeys $contextual_tuples = null, string $authorization_model_id = null, bool $trace = null, object $context = null, \RuncloudIO\SDK\OPENFGA\Model\ConsistencyPreference $consistency = null)
     {
         if(!is_null($tuple_key)) {
             $this->container['tuple_key'] = $tuple_key;

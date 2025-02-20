@@ -186,7 +186,7 @@ class UsersetTreeDifference implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\Node $subtract subtract 
      *   Associated array of property values initializing the model
      */
-    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\Node $base, \RuncloudIO\SDK\OPENFGA\Model\Node $subtract)
+    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\Node $base = null, \RuncloudIO\SDK\OPENFGA\Model\Node $subtract = null)
     {
         if(!is_null($base)) {
             $this->container['base'] = $base;

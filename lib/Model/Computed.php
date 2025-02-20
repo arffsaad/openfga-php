@@ -177,7 +177,7 @@ class Computed implements ModelInterface
      * @param string $userset userset 
      *   Associated array of property values initializing the model
      */
-    public function __construct(string $userset)
+    public function __construct(string $userset = null)
     {
         if(!is_null($userset)) {
             $this->container['userset'] = $userset;

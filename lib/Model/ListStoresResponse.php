@@ -186,7 +186,7 @@ class ListStoresResponse implements ModelInterface
      * @param string $continuation_token continuation_token 
      *   Associated array of property values initializing the model
      */
-    public function __construct(array $stores, string $continuation_token)
+    public function __construct(array $stores = null, string $continuation_token = null)
     {
         if(!is_null($stores)) {
             $this->container['stores'] = $stores;

@@ -186,7 +186,7 @@ class ReadResponse implements ModelInterface
      * @param string $continuation_token continuation_token 
      *   Associated array of property values initializing the model
      */
-    public function __construct(array $tuples, string $continuation_token)
+    public function __construct(array $tuples = null, string $continuation_token = null)
     {
         if(!is_null($tuples)) {
             $this->container['tuples'] = $tuples;

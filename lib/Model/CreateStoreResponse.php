@@ -204,7 +204,7 @@ class CreateStoreResponse implements ModelInterface
      * @param \DateTime $updated_at updated_at 
      *   Associated array of property values initializing the model
      */
-    public function __construct(string $id, string $name, \DateTime $created_at, \DateTime $updated_at)
+    public function __construct(string $id = null, string $name = null, \DateTime $created_at = null, \DateTime $updated_at = null)
     {
         if(!is_null($id)) {
             $this->container['id'] = $id;

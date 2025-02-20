@@ -195,7 +195,7 @@ class AssertionTupleKey implements ModelInterface
      * @param string $user user 
      *   Associated array of property values initializing the model
      */
-    public function __construct(string $object, string $relation, string $user)
+    public function __construct(string $object = null, string $relation = null, string $user = null)
     {
         if(!is_null($object)) {
             $this->container['object'] = $object;

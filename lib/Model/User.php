@@ -193,7 +193,7 @@ class User implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\TypedWildcard $wildcard wildcard 
      *   Associated array of property values initializing the model
      */
-    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\Object $object, \RuncloudIO\SDK\OPENFGA\Model\UsersetUser $userset, \RuncloudIO\SDK\OPENFGA\Model\TypedWildcard $wildcard)
+    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\Object $object = null, \RuncloudIO\SDK\OPENFGA\Model\UsersetUser $userset = null, \RuncloudIO\SDK\OPENFGA\Model\TypedWildcard $wildcard = null)
     {
         if(!is_null($object)) {
             $this->container['object'] = $object;

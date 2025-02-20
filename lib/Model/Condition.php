@@ -202,7 +202,7 @@ class Condition implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\ConditionMetadata $metadata metadata 
      *   Associated array of property values initializing the model
      */
-    public function __construct(string $name, string $expression, map[string,\RuncloudIO\SDK\OPENFGA\Model\ConditionParamTypeRef] $parameters, \RuncloudIO\SDK\OPENFGA\Model\ConditionMetadata $metadata)
+    public function __construct(string $name = null, string $expression = null, map[string,\RuncloudIO\SDK\OPENFGA\Model\ConditionParamTypeRef] $parameters = null, \RuncloudIO\SDK\OPENFGA\Model\ConditionMetadata $metadata = null)
     {
         if(!is_null($name)) {
             $this->container['name'] = $name;

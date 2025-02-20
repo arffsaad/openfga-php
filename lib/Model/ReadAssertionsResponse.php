@@ -185,7 +185,7 @@ class ReadAssertionsResponse implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\Assertion[] $assertions assertions 
      *   Associated array of property values initializing the model
      */
-    public function __construct(string $authorization_model_id, array $assertions)
+    public function __construct(string $authorization_model_id = null, array $assertions = null)
     {
         if(!is_null($authorization_model_id)) {
             $this->container['authorization_model_id'] = $authorization_model_id;

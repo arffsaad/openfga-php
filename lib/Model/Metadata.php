@@ -192,7 +192,7 @@ class Metadata implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\SourceInfo $source_info source_info 
      *   Associated array of property values initializing the model
      */
-    public function __construct(map[string,\RuncloudIO\SDK\OPENFGA\Model\RelationMetadata] $relations, string $module, \RuncloudIO\SDK\OPENFGA\Model\SourceInfo $source_info)
+    public function __construct(map[string,\RuncloudIO\SDK\OPENFGA\Model\RelationMetadata] $relations = null, string $module = null, \RuncloudIO\SDK\OPENFGA\Model\SourceInfo $source_info = null)
     {
         if(!is_null($relations)) {
             $this->container['relations'] = $relations;

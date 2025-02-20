@@ -177,7 +177,7 @@ class WriteAuthorizationModelResponse implements ModelInterface
      * @param string $authorization_model_id authorization_model_id 
      *   Associated array of property values initializing the model
      */
-    public function __construct(string $authorization_model_id)
+    public function __construct(string $authorization_model_id = null)
     {
         if(!is_null($authorization_model_id)) {
             $this->container['authorization_model_id'] = $authorization_model_id;

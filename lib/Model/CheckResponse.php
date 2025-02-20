@@ -184,7 +184,7 @@ class CheckResponse implements ModelInterface
      * @param string $resolution resolution 
      *   Associated array of property values initializing the model
      */
-    public function __construct(bool $allowed, string $resolution)
+    public function __construct(bool $allowed = null, string $resolution = null)
     {
         if(!is_null($allowed)) {
             $this->container['allowed'] = $allowed;

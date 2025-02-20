@@ -200,7 +200,7 @@ class StoreIdReadBody implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\ConsistencyPreference $consistency consistency 
      *   Associated array of property values initializing the model
      */
-    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\ReadRequestTupleKey $tuple_key, int $page_size, string $continuation_token, \RuncloudIO\SDK\OPENFGA\Model\ConsistencyPreference $consistency)
+    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\ReadRequestTupleKey $tuple_key = null, int $page_size = null, string $continuation_token = null, \RuncloudIO\SDK\OPENFGA\Model\ConsistencyPreference $consistency = null)
     {
         if(!is_null($tuple_key)) {
             $this->container['tuple_key'] = $tuple_key;

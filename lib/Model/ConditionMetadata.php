@@ -184,7 +184,7 @@ class ConditionMetadata implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\SourceInfo $source_info source_info 
      *   Associated array of property values initializing the model
      */
-    public function __construct(string $module, \RuncloudIO\SDK\OPENFGA\Model\SourceInfo $source_info)
+    public function __construct(string $module = null, \RuncloudIO\SDK\OPENFGA\Model\SourceInfo $source_info = null)
     {
         if(!is_null($module)) {
             $this->container['module'] = $module;

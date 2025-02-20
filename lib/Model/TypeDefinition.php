@@ -193,7 +193,7 @@ class TypeDefinition implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\Metadata $metadata metadata 
      *   Associated array of property values initializing the model
      */
-    public function __construct(string $type, map[string,\RuncloudIO\SDK\OPENFGA\Model\Userset] $relations, \RuncloudIO\SDK\OPENFGA\Model\Metadata $metadata)
+    public function __construct(string $type = null, map[string,\RuncloudIO\SDK\OPENFGA\Model\Userset] $relations = null, \RuncloudIO\SDK\OPENFGA\Model\Metadata $metadata = null)
     {
         if(!is_null($type)) {
             $this->container['type'] = $type;

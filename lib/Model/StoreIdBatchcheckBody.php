@@ -193,7 +193,7 @@ class StoreIdBatchcheckBody implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\ConsistencyPreference $consistency consistency 
      *   Associated array of property values initializing the model
      */
-    public function __construct(array $checks, string $authorization_model_id, \RuncloudIO\SDK\OPENFGA\Model\ConsistencyPreference $consistency)
+    public function __construct(array $checks = null, string $authorization_model_id = null, \RuncloudIO\SDK\OPENFGA\Model\ConsistencyPreference $consistency = null)
     {
         if(!is_null($checks)) {
             $this->container['checks'] = $checks;

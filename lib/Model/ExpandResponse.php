@@ -176,7 +176,7 @@ class ExpandResponse implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\UsersetTree $tree tree 
      *   Associated array of property values initializing the model
      */
-    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\UsersetTree $tree)
+    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\UsersetTree $tree = null)
     {
         if(!is_null($tree)) {
             $this->container['tree'] = $tree;

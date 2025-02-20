@@ -186,7 +186,7 @@ class UsersetTreeTupleToUserset implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\Computed[] $computed computed 
      *   Associated array of property values initializing the model
      */
-    public function __construct(string $tupleset, array $computed)
+    public function __construct(string $tupleset = null, array $computed = null)
     {
         if(!is_null($tupleset)) {
             $this->container['tupleset'] = $tupleset;

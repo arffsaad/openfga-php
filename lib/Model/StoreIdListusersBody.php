@@ -227,7 +227,7 @@ class StoreIdListusersBody implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\ConsistencyPreference $consistency consistency 
      *   Associated array of property values initializing the model
      */
-    public function __construct(string $authorization_model_id, \RuncloudIO\SDK\OPENFGA\Model\Object $object, string $relation, array $user_filters, array $contextual_tuples, object $context, \RuncloudIO\SDK\OPENFGA\Model\ConsistencyPreference $consistency)
+    public function __construct(string $authorization_model_id = null, \RuncloudIO\SDK\OPENFGA\Model\Object $object = null, string $relation = null, array $user_filters = null, array $contextual_tuples = null, object $context = null, \RuncloudIO\SDK\OPENFGA\Model\ConsistencyPreference $consistency = null)
     {
         if(!is_null($authorization_model_id)) {
             $this->container['authorization_model_id'] = $authorization_model_id;

@@ -209,7 +209,7 @@ class Node implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\Nodes $intersection intersection 
      *   Associated array of property values initializing the model
      */
-    public function __construct(string $name, \RuncloudIO\SDK\OPENFGA\Model\Leaf $leaf, \RuncloudIO\SDK\OPENFGA\Model\UsersetTreeDifference $difference, \RuncloudIO\SDK\OPENFGA\Model\Nodes $union, \RuncloudIO\SDK\OPENFGA\Model\Nodes $intersection)
+    public function __construct(string $name = null, \RuncloudIO\SDK\OPENFGA\Model\Leaf $leaf = null, \RuncloudIO\SDK\OPENFGA\Model\UsersetTreeDifference $difference = null, \RuncloudIO\SDK\OPENFGA\Model\Nodes $union = null, \RuncloudIO\SDK\OPENFGA\Model\Nodes $intersection = null)
     {
         if(!is_null($name)) {
             $this->container['name'] = $name;

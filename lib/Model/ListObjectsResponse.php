@@ -177,7 +177,7 @@ class ListObjectsResponse implements ModelInterface
      * @param string[] $objects objects 
      *   Associated array of property values initializing the model
      */
-    public function __construct(array $objects)
+    public function __construct(array $objects = null)
     {
         if(!is_null($objects)) {
             $this->container['objects'] = $objects;

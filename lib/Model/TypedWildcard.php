@@ -178,7 +178,7 @@ class TypedWildcard implements ModelInterface
      * @param string $type type 
      *   Associated array of property values initializing the model
      */
-    public function __construct(string $type)
+    public function __construct(string $type = null)
     {
         if(!is_null($type)) {
             $this->container['type'] = $type;

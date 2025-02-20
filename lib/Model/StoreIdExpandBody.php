@@ -201,7 +201,7 @@ class StoreIdExpandBody implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\ContextualTupleKeys $contextual_tuples contextual_tuples 
      *   Associated array of property values initializing the model
      */
-    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\ExpandRequestTupleKey $tuple_key, string $authorization_model_id, \RuncloudIO\SDK\OPENFGA\Model\ConsistencyPreference $consistency, \RuncloudIO\SDK\OPENFGA\Model\ContextualTupleKeys $contextual_tuples)
+    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\ExpandRequestTupleKey $tuple_key = null, string $authorization_model_id = null, \RuncloudIO\SDK\OPENFGA\Model\ConsistencyPreference $consistency = null, \RuncloudIO\SDK\OPENFGA\Model\ContextualTupleKeys $contextual_tuples = null)
     {
         if(!is_null($tuple_key)) {
             $this->container['tuple_key'] = $tuple_key;

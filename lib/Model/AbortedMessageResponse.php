@@ -184,7 +184,7 @@ class AbortedMessageResponse implements ModelInterface
      * @param string $message message 
      *   Associated array of property values initializing the model
      */
-    public function __construct(string $code, string $message)
+    public function __construct(string $code = null, string $message = null)
     {
         if(!is_null($code)) {
             $this->container['code'] = $code;

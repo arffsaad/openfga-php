@@ -177,7 +177,7 @@ class UsersetTree implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\Node $root root 
      *   Associated array of property values initializing the model
      */
-    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\Node $root)
+    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\Node $root = null)
     {
         if(!is_null($root)) {
             $this->container['root'] = $root;

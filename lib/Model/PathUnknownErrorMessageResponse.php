@@ -184,7 +184,7 @@ class PathUnknownErrorMessageResponse implements ModelInterface
      * @param string $message message 
      *   Associated array of property values initializing the model
      */
-    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\NotFoundErrorCode $code, string $message)
+    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\NotFoundErrorCode $code = null, string $message = null)
     {
         if(!is_null($code)) {
             $this->container['code'] = $code;

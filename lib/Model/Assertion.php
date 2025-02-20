@@ -202,7 +202,7 @@ class Assertion implements ModelInterface
      * @param object $context context 
      *   Associated array of property values initializing the model
      */
-    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\AssertionTupleKey $tuple_key, bool $expectation, array $contextual_tuples, object $context)
+    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\AssertionTupleKey $tuple_key = null, bool $expectation = null, array $contextual_tuples = null, object $context = null)
     {
         if(!is_null($tuple_key)) {
             $this->container['tuple_key'] = $tuple_key;

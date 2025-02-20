@@ -192,7 +192,7 @@ class ReadRequestTupleKey implements ModelInterface
      * @param string $object object 
      *   Associated array of property values initializing the model
      */
-    public function __construct(string $user, string $relation, string $object)
+    public function __construct(string $user = null, string $relation = null, string $object = null)
     {
         if(!is_null($user)) {
             $this->container['user'] = $user;

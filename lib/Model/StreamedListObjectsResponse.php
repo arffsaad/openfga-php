@@ -178,7 +178,7 @@ class StreamedListObjectsResponse implements ModelInterface
      * @param string $object object 
      *   Associated array of property values initializing the model
      */
-    public function __construct(string $object)
+    public function __construct(string $object = null)
     {
         if(!is_null($object)) {
             $this->container['object'] = $object;

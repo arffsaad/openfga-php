@@ -177,7 +177,7 @@ class WriteRequestDeletes implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\TupleKeyWithoutCondition[] $tuple_keys tuple_keys 
      *   Associated array of property values initializing the model
      */
-    public function __construct(array $tuple_keys)
+    public function __construct(array $tuple_keys = null)
     {
         if(!is_null($tuple_keys)) {
             $this->container['tuple_keys'] = $tuple_keys;

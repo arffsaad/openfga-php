@@ -192,7 +192,7 @@ class CheckError implements ModelInterface
      * @param string $message message 
      *   Associated array of property values initializing the model
      */
-    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\ErrorCode $input_error, \RuncloudIO\SDK\OPENFGA\Model\InternalErrorCode $internal_error, string $message)
+    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\ErrorCode $input_error = null, \RuncloudIO\SDK\OPENFGA\Model\InternalErrorCode $internal_error = null, string $message = null)
     {
         if(!is_null($input_error)) {
             $this->container['input_error'] = $input_error;

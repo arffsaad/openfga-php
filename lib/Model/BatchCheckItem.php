@@ -202,7 +202,7 @@ class BatchCheckItem implements ModelInterface
      * @param string $correlation_id correlation_id 
      *   Associated array of property values initializing the model
      */
-    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\CheckRequestTupleKey $tuple_key, \RuncloudIO\SDK\OPENFGA\Model\ContextualTupleKeys $contextual_tuples, object $context, string $correlation_id)
+    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\CheckRequestTupleKey $tuple_key = null, \RuncloudIO\SDK\OPENFGA\Model\ContextualTupleKeys $contextual_tuples = null, object $context = null, string $correlation_id = null)
     {
         if(!is_null($tuple_key)) {
             $this->container['tuple_key'] = $tuple_key;

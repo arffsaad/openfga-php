@@ -184,7 +184,7 @@ class StreamResultOfStreamedListObjectsResponse implements ModelInterface
      * @param \RuncloudIO\SDK\OPENFGA\Model\Status $error error 
      *   Associated array of property values initializing the model
      */
-    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\StreamedListObjectsResponse $result, \RuncloudIO\SDK\OPENFGA\Model\Status $error)
+    public function __construct(\RuncloudIO\SDK\OPENFGA\Model\StreamedListObjectsResponse $result = null, \RuncloudIO\SDK\OPENFGA\Model\Status $error = null)
     {
         if(!is_null($result)) {
             $this->container['result'] = $result;

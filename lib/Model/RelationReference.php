@@ -202,7 +202,7 @@ class RelationReference implements ModelInterface
      * @param string $condition condition 
      *   Associated array of property values initializing the model
      */
-    public function __construct(string $type, string $relation, \RuncloudIO\SDK\OPENFGA\Model\Wildcard $wildcard, string $condition)
+    public function __construct(string $type = null, string $relation = null, \RuncloudIO\SDK\OPENFGA\Model\Wildcard $wildcard = null, string $condition = null)
     {
         if(!is_null($type)) {
             $this->container['type'] = $type;
