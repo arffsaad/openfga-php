@@ -1,6 +1,6 @@
 # RuncloudIO\SDK\OPENFGA\StoresApi
 
-All URIs are relative to *http://my-openfga.infrastructure.svc.cluster.local:8081*
+All URIs are relative to *my-openfga.infrastructure.svc.cluster.local:8081*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------

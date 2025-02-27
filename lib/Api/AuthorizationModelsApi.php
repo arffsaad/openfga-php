@@ -678,11 +678,27 @@ class AuthorizationModelsApi
 
         // query params
         if ($page_size !== null) {
-            $queryParams['page_size'] = ObjectSerializer::toQueryValue($page_size, 'int32');
+            $result = preg_match('/\[\]$/', 'page_size', $matches);
+            if($result){
+                foreach($page_size_raw as $index => $var){
+                    $queryParams['page_size['.$index.']'] = $var;
+                }
+            } else {
+                $queryParams['page_size'] = ObjectSerializer::toQueryValue($page_size);
+            }
+            
         }
         // query params
         if ($continuation_token !== null) {
-            $queryParams['continuation_token'] = ObjectSerializer::toQueryValue($continuation_token, null);
+            $result = preg_match('/\[\]$/', 'continuation_token', $matches);
+            if($result){
+                foreach($continuation_token_raw as $index => $var){
+                    $queryParams['continuation_token['.$index.']'] = $var;
+                }
+            } else {
+                $queryParams['continuation_token'] = ObjectSerializer::toQueryValue($continuation_token);
+            }
+            
         }
 
         // path params

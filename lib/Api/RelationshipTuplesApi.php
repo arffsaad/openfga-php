@@ -683,19 +683,51 @@ class RelationshipTuplesApi
 
         // query params
         if ($type !== null) {
-            $queryParams['type'] = ObjectSerializer::toQueryValue($type, null);
+            $result = preg_match('/\[\]$/', 'type', $matches);
+            if($result){
+                foreach($type_raw as $index => $var){
+                    $queryParams['type['.$index.']'] = $var;
+                }
+            } else {
+                $queryParams['type'] = ObjectSerializer::toQueryValue($type);
+            }
+            
         }
         // query params
         if ($page_size !== null) {
-            $queryParams['page_size'] = ObjectSerializer::toQueryValue($page_size, 'int32');
+            $result = preg_match('/\[\]$/', 'page_size', $matches);
+            if($result){
+                foreach($page_size_raw as $index => $var){
+                    $queryParams['page_size['.$index.']'] = $var;
+                }
+            } else {
+                $queryParams['page_size'] = ObjectSerializer::toQueryValue($page_size);
+            }
+            
         }
         // query params
         if ($continuation_token !== null) {
-            $queryParams['continuation_token'] = ObjectSerializer::toQueryValue($continuation_token, null);
+            $result = preg_match('/\[\]$/', 'continuation_token', $matches);
+            if($result){
+                foreach($continuation_token_raw as $index => $var){
+                    $queryParams['continuation_token['.$index.']'] = $var;
+                }
+            } else {
+                $queryParams['continuation_token'] = ObjectSerializer::toQueryValue($continuation_token);
+            }
+            
         }
         // query params
         if ($start_time !== null) {
-            $queryParams['start_time'] = ObjectSerializer::toQueryValue($start_time, 'date-time');
+            $result = preg_match('/\[\]$/', 'start_time', $matches);
+            if($result){
+                foreach($start_time_raw as $index => $var){
+                    $queryParams['start_time['.$index.']'] = $var;
+                }
+            } else {
+                $queryParams['start_time'] = ObjectSerializer::toQueryValue($start_time);
+            }
+            
         }
 
         // path params

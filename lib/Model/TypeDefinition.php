@@ -321,4 +321,9 @@ class TypeDefinition implements ModelInterface
 
         return json_encode(ObjectSerializer::sanitizeForSerialization($this));
     }
+
+    public function toJson()
+    {
+        return json_encode($this->container);
+    }
 }

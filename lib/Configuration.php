@@ -114,7 +114,7 @@ class Configuration
     public function __construct()
     {
         $this->tempFolderPath = sys_get_temp_dir();
-        $this->host = env('OPENFGA_HOST_URL', 'http://my-openfga.infrastructure.svc.cluster.local:8081');
+        $this->host = env('OPENFGA_HOST_URL', 'my-openfga.infrastructure.svc.cluster.local:8081');
     }
 
     /**
